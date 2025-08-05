@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thitikorn Sailaokham  - นักศึกษาวิทยาลัยอาชีวะศึกษา </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo" style="display:flex;align-items:center;gap:12px;">
+            <span style="font-size:2rem;font-weight:600;font-family:'Prompt',sans-serif;color:#2a2a2a;">Dw</span>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-text">
+            <div class="hero-title slide-in">Thitikorn Sailaokham</div>
+            <div class="hero-desc slide-in">
+                Hello, my name is Thitikorn Sailaokham. I am a vocational college student<br>
+                I am a second-year student<br>
+                I have experience in web development, cooking, motorcycle repair, and business.
+            </div>
+            <!-- <button class="hero-btn">รายละเอียด&darr;</button> -->
+        </div>
+        <img src="ing/43036ab6-fe32-47ca-96ee-f9a06c45ed2b.jpg" alt="profile" class="hero-img">
+    </div>
+    <div class="section" id="about">
+        <div class="section-title slide-in">My name is Thitikorn. My nickname is Diew<br>And I'm passionate about speed</div>
+        <div class="section-desc slide-in">
+            Speed is my sanctuary — it lifts my spirit, clears my mind, and makes all the stress fade away
+        </div>
+        <div class="section-highlight slide-in">"Together, let’s drive innovation in technology and industry to serve what we love and what truly matters."</div>
+    </div>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+    <div class="contact-section" style="margin-top:40px;text-align:center;">
+        <h2>ช่องทางติดต่อ</h2>
+        <p>
+            <a href="https://www.facebook.com/thitikorn.sailaokham" target="_blank" rel="noopener" style="margin-right:24px;vertical-align:middle;display:inline-block;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" style="vertical-align:middle;"><circle cx="16" cy="16" r="16" fill="#1877f3"/><path d="M22.675 16H18.5v8h-3v-8h-2v-2.5h2v-1.5c0-2.1 1.2-3.5 3.5-3.5h2v2.5h-2c-.5 0-.5.2-.5.5v1.5h2.5L22.675 16z" fill="#fff"/></svg>
+            </a>
+            <a href="https://line.me/ti/p/wOa8eiSm2R" target="_blank" rel="noopener" style="margin-right:12px;vertical-align:middle;display:inline-block;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" style="vertical-align:middle;"><circle cx="16" cy="16" r="16" fill="#00c300"/><text x="16" y="21" text-anchor="middle" font-size="13" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-weight="bold">LINE</text></svg>
+            </a>
+            <button id="showLineQR" style="margin-left:10px;padding:5px 12px;cursor:pointer;">ดู QR LINE</button>
+    <!-- Modal สำหรับแสดง QR LINE -->
+    <div id="lineQRModal" style="display:none;position:fixed;z-index:9999;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.6);justify-content:center;align-items:center;">
+        <div style="background:#fff;padding:24px 32px;border-radius:12px;box-shadow:0 2px 16px rgba(0,0,0,0.2);text-align:center;position:relative;max-width:90vw;max-height:90vh;">
+            <h3 style="margin-bottom:16px;">QR CODE LINE</h3>
+            <img src="ing/2815c393-ec0b-4c02-a5cd-23936a6b0412.jpg" alt="LINE QR" style="max-width:300px;width:100%;height:auto;border-radius:8px;box-shadow:0 1px 8px rgba(0,0,0,0.1);">
+            <br>
+            <button id="closeLineQR" style="margin-top:18px;padding:6px 18px;cursor:pointer;">ปิด</button>
+        </div>
+    </div>
+    <script>
+    document.getElementById('showLineQR').onclick = function() {
+        document.getElementById('lineQRModal').style.display = 'flex';
+    };
+    document.getElementById('closeLineQR').onclick = function() {
+        document.getElementById('lineQRModal').style.display = 'none';
+    };
+    // ปิด modal เมื่อคลิกด้านนอกกล่อง
+    document.getElementById('lineQRModal').onclick = function(e) {
+        if (e.target === this) this.style.display = 'none';
+    };
+    </script>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบเพื่อเข้าดู</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-title">เข้าสู่ระบบ</div>
+        <form id="loginForm">
+            <label for="password" class="login-label">รหัสผ่าน</label>
+            <input type="password" id="password" class="login-input" placeholder="กรอกรหัสผ่าน" required autocomplete="off">
+            <div id="loginError" class="login-error"></div>
+            <button type="submit" class="login-btn">เข้าสู่ระบบ</button>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
