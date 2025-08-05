@@ -1,4 +1,4 @@
-é
+
     document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('loginForm');
     const passwordInput = document.getElementById('password');
@@ -19,5 +19,6 @@
         }
     });
 });
+
 
 
